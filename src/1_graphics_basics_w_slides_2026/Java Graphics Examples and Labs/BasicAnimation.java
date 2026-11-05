@@ -4,12 +4,12 @@ import javax.swing.*;
 import java.util.*;
 import java.awt.MouseInfo;
 
-public class Animation extends JPanel implements Runnable
+public class BasicAnimation extends JPanel implements Runnable
 {
 	int x = 0;
 	int y = 0;
 	
-	public Animation()
+	public BasicAnimation()
 	{
 		setBackground(Color.WHITE);
 

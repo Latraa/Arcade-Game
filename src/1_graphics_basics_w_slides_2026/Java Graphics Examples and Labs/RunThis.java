@@ -26,7 +26,7 @@ public class RunThis extends JFrame
 
       	//getContentPane().add(new FontsAndColors() );
       	
-      	getContentPane().add(new Animation() );
+		getContentPane().add(new BasicAnimation() );
 
       	//DRAW YOUR PICTURE USING THIS FILE
       	//getContentPane().add(new Picture() );
