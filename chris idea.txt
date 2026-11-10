@@ -1,0 +1,10 @@
+hi it's chris here's my idea
+
+classes
+tile - parent, basic outline tile
+^ barrier - child, u shall not pass bru
+^ paintedtile - child, im painted bru
+entity - parent, you exist and can move i guess
+^ enemy - child, I WANT TO KILL YOU
+^ player - child, aaaay im painting here
+^ ^ distractor - child of player, im unpainting ur stuff come get me player but i cant kill you
