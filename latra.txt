@@ -1,0 +1,11 @@
+ORDER OF THE GAME WE SHOULD WORK ON IT
+Start with MazeGenerator.java, since the maze is the foundation of your game.
+
+Then work in this order:
+1. MazeGenerator — generates the maze using DFS.
+2. Tile and Map — store walls, paths, and which paths are painted.
+3. Renderer — draws the maze.
+4. Game and GameRunner — open the window and display it.
+5. Player and InputHandler — let you move around and paint paths.
+6. Enemy, CollisionDetector, and ScoreManager — add enemies, collisions, scoring, and lives.
+Your first goal should be running GameRunner and seeing a generated maze on the screen.
