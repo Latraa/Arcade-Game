@@ -13,6 +13,7 @@ public class MazeGenerator {
         for (int[] row : maze) {
             Arrays.fill(row, 1);
         }
+        //hello
 
         dfs(1, 1);
         removeDeadEnds();
