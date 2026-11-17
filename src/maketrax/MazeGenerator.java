@@ -11,9 +11,6 @@ public class MazeGenerator {
     private final int[] dc = {0, 0, -1, 1};
 
     public int[][] generate(int rows, int cols) {
-        if (rows < 15 || cols < 23 || rows % 2 == 0 || cols % 2 == 0) {
-            throw new IllegalArgumentException("Use odd sizes, at least 15 by 23.");
-        }
         maze = new int[rows][cols];
         for (int r = 0; r < rows; r++) {
             for (int c = 0; c < cols; c++) {
@@ -104,11 +101,13 @@ public class MazeGenerator {
 
     public static void main(String[] args) {
         MazeGenerator generator = new MazeGenerator();
-        int[][] maze = generator.generate(27, 39);
+        int rows = generator.rand.nextInt(4) * 2 + 15;
+        int cols = generator.rand.nextInt(4) * 2 + 15;
+        int[][] maze = generator.generate(rows, cols);
         for (int r = 0; r < maze.length; r++) {
             for (int c = 0; c < maze[r].length; c++) {
                 if (maze[r][c] == 1) {
-                    System.out.print("██");
+                    System.out.print("[]");
                 } else {
                     System.out.print("  ");
                 }
